@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnlister", "StudentEnlister\StudentEnlister.csproj", "{7340539F-D15F-48D8-81F3-3AADC474FD5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentEnlisterLibrary", "StudentEnlisterLibrary\StudentEnlisterLibrary.csproj", "{45CF87F8-56C8-40CC-AEFB-6DAA08623495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7340539F-D15F-48D8-81F3-3AADC474FD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7340539F-D15F-48D8-81F3-3AADC474FD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7340539F-D15F-48D8-81F3-3AADC474FD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7340539F-D15F-48D8-81F3-3AADC474FD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45CF87F8-56C8-40CC-AEFB-6DAA08623495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45CF87F8-56C8-40CC-AEFB-6DAA08623495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45CF87F8-56C8-40CC-AEFB-6DAA08623495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45CF87F8-56C8-40CC-AEFB-6DAA08623495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+c:\users\alen\documents\visual studio 2015\Projects\StudentEnlister\StudentEnlisterLibrary\bin\Debug\StudentEnlisterLibrary.dll
+c:\users\alen\documents\visual studio 2015\Projects\StudentEnlister\StudentEnlisterLibrary\bin\Debug\StudentEnlisterLibrary.pdb
+c:\users\alen\documents\visual studio 2015\Projects\StudentEnlister\StudentEnlisterLibrary\obj\Debug\StudentEnlisterLibrary.csprojResolveAssemblyReference.cache
+c:\users\alen\documents\visual studio 2015\Projects\StudentEnlister\StudentEnlisterLibrary\obj\Debug\StudentEnlisterLibrary.dll
+c:\users\alen\documents\visual studio 2015\Projects\StudentEnlister\StudentEnlisterLibrary\obj\Debug\StudentEnlisterLibrary.pdb
