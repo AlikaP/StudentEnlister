@@ -95,7 +95,7 @@ namespace StudentEnlister
                     StudentIdGenerator studentId = StudentIdGenerator.Instance();
 
                     studentId.CreateId();
-                    student.Id = studentId.Id;
+                    student.Id = studentId.id;
                                         
                     //spremanje u listu
                     studentContainer.StudentEnlist(student);

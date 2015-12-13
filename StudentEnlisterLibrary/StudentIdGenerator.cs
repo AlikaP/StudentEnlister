@@ -10,7 +10,7 @@ namespace StudentEnlisterLibrary
     {
         private static StudentIdGenerator _instance;
 
-        public int Id = 0;
+        public int id = 0;
 
         protected StudentIdGenerator()
         {
@@ -19,8 +19,8 @@ namespace StudentEnlisterLibrary
         
         public int CreateId()
         {
-            Id++;
-            return Id;                
+            id++;
+            return id;                
         }
                 
         public static StudentIdGenerator Instance()
