@@ -8,10 +8,9 @@ namespace StudentEnlisterLibrary
 {
     public abstract class Person
     {
-        //student properties
-        public string name { get; set; }
-        public string surname { get; set; }
-        public string gpa { get; set; }
-        public int id { get; set; }
+        //person properties
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Id { get; set; }
     }
 }

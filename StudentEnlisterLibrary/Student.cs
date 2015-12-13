@@ -8,5 +8,6 @@ namespace StudentEnlisterLibrary
 {
     public class Student : Person
     {
+        public string GPA { get; set; }
     }
 }

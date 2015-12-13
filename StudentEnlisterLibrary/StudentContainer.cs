@@ -11,25 +11,25 @@ namespace StudentEnlisterLibrary
         private static StudentContainer _instance;
 
         List<Student> StudentList = new List<Student>();
-        
+
         //dodavanje studenta u listu
         public void StudentEnlist(Student newStudent)
         {
-
-            StudentList.Add(newStudent);
-            
+            if (newStudent != null)
+            {
+                StudentList.Add(newStudent);
+            }
         }
 
         //sortirana lista
         public List<Student> ListReturn()
         {
             // list of students sorted alphabetically (sorted by last name - ascending)
-            List<Student> SortedList = StudentList.OrderBy(o => o.surname).ToList();
+            List<Student> sortedList = StudentList.OrderBy(o => o.Surname).ToList();
 
-            return SortedList;
+            return sortedList;
         }
-
-
+        
         public static StudentContainer Instance()
         {            
             if (_instance == null)
