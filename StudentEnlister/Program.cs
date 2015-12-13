@@ -118,8 +118,8 @@ namespace StudentEnlister
                     foreach (var stud in lista)
                     {
                         redni++;
-                        //stud.id = redni;
-                        // Console.WriteLine("{0}. {1}, {2} - {3}", stud.id, stud.surname, stud.name, stud.gpa);
+                        //stud.Id = redni;
+                        //Console.WriteLine("{0}. {1}, {2} - {3}", stud.Id, stud.Surname, stud.Name, stud.GPA);
                         Console.WriteLine("{0}. {1}, {2} - {3}", redni, stud.Surname, stud.Name, stud.GPA);
                     }
                 }
@@ -127,6 +127,7 @@ namespace StudentEnlister
                 else
                 {
                     loop = true;
+                    
                     Console.WriteLine("Please insert existing operation (enlist/display)");
                 }                              
 
