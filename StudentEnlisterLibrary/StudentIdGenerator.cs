@@ -10,17 +10,17 @@ namespace StudentEnlisterLibrary
     {
         private static StudentIdGenerator _instance;
 
-        public int id = 0;
+        private int previousId = 0;
 
-        protected StudentIdGenerator()
+        private StudentIdGenerator()
         {
             // ...
         }
         
         public int CreateId()
         {
-            id++;
-            return id;                
+            previousId++;  
+            return previousId;                
         }
                 
         public static StudentIdGenerator Instance()

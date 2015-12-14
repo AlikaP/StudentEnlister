@@ -26,15 +26,14 @@ namespace StudentEnlister
                 operation = Console.ReadLine();
                                 
                 //enlist
-                if (string.Equals(operation, Operations.enlist , StringComparison.CurrentCultureIgnoreCase))
-                {
-                    
-                    string ime;
-                    string prezime;
+                if (operation.Equals(Operations.enlist , StringComparison.CurrentCultureIgnoreCase))
+                {                    
+                    string name;
+                    string surname;
                     string gpa = null;
 
-                    bool imeLoop = true;
-                    bool prezimeLoop = true;
+                    bool nameLoop = true;
+                    bool surnameLoop = true;
                     bool gpaLoop = true;
 
                     Console.WriteLine("Student");
@@ -42,38 +41,38 @@ namespace StudentEnlister
                     do
                     {
                         Console.WriteLine("First name:");
-                        ime = Console.ReadLine();
-                        if (String.IsNullOrEmpty(ime))
+                        name = Console.ReadLine();
+                        if (String.IsNullOrEmpty(name))
                         {
-                            imeLoop = false;
+                            nameLoop = false;
                             Console.WriteLine("You need to insert value.");
                         }
                         else
                         {
-                            imeLoop = true;
+                            nameLoop = true;
                         }
-                    } while (!imeLoop);
+                    } while (!nameLoop);
 
                     do
                     {
                         Console.WriteLine("Last name:");
-                        prezime = Console.ReadLine();
-                        if (String.IsNullOrEmpty(prezime))
+                        surname = Console.ReadLine();
+                        if (String.IsNullOrEmpty(surname))
                         {
-                            prezimeLoop = false;
+                            surnameLoop = false;
                             Console.WriteLine("You need to insert value.");
                         }
                         else
                         {
-                            prezimeLoop = true;
+                            surnameLoop = true;
                         }
-                    } while (!prezimeLoop);
+                    } while (!surnameLoop);
 
                     do
                     {
                         Console.WriteLine("GPA:");
                         var gpaTest = Console.ReadLine();
-                        if (!Validation.checkGPA(gpaTest))
+                        if (!Validation.CheckGPA(gpaTest))
                         {
                             gpaLoop = false;
                             Console.WriteLine("You need to insert numerical value");
@@ -87,16 +86,15 @@ namespace StudentEnlister
 
                     //student objekt
                     Student student = new Student();
-                    student.Name = ime;
-                    student.Surname = prezime;
+                    student.Name = name;
+                    student.Surname = surname;
                     student.GPA = gpa;
 
                     //id
                     StudentIdGenerator studentId = StudentIdGenerator.Instance();
 
-                    studentId.CreateId();
-                    student.Id = studentId.id;
-                                        
+                    student.Id = studentId.CreateId();
+                                 
                     //spremanje u listu
                     studentContainer.StudentEnlist(student);
                     
@@ -105,22 +103,21 @@ namespace StudentEnlister
                 }
 
                 //display
-                else if (string.Equals(operation, Operations.display, StringComparison.CurrentCultureIgnoreCase))
-                {
-                                   
+                else if (operation.Equals(Operations.display, StringComparison.CurrentCultureIgnoreCase))
+                {                                   
                     StudentContainer container = StudentContainer.Instance();
-                    var lista = container.ListReturn();
+                    var list = container.GetSortedList();
 
                     Console.WriteLine("Students in system");
 
-                    var redni = 0;
+                    var order = 0;
 
-                    foreach (var stud in lista)
+                    foreach (var student in list)
                     {
-                        redni++;
+                        order++;
                         //stud.Id = redni;
                         //Console.WriteLine("{0}. {1}, {2} - {3}", stud.Id, stud.Surname, stud.Name, stud.GPA);
-                        Console.WriteLine("{0}. {1}, {2} - {3}", redni, stud.Surname, stud.Name, stud.GPA);
+                        Console.WriteLine("{0}. {1}, {2} - {3}", order, student.Surname, student.Name, student.GPA);
                     }
                 }
 

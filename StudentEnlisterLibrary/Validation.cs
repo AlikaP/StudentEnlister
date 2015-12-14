@@ -8,7 +8,7 @@ namespace StudentEnlisterLibrary
 {
     public class Validation
     {                            
-        public static bool checkGPA(string gpa)
+        public static bool CheckGPA(string gpa)
         {
             float value;
 
