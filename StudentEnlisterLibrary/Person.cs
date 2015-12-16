@@ -11,7 +11,7 @@ namespace StudentEnlisterLibrary
         //person properties
         public string Name { get; set; }
         public string Surname { get; set; }
-        private int Id { get; set; }
+        public int Id { get; private set; }
 
         public Person()
         {

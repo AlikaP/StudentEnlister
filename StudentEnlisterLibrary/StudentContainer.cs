@@ -10,14 +10,14 @@ namespace StudentEnlisterLibrary
     {
         private static StudentContainer _instance;
 
-        private List<Student> StudentList = new List<Student>();
+        private List<Student> studentList = new List<Student>();
 
         //dodavanje studenta u listu
         public void StudentEnlist(Student newStudent)
         {
             if (newStudent != null)
             {
-                StudentList.Add(newStudent);
+                studentList.Add(newStudent);
             }
         }
 
@@ -25,7 +25,7 @@ namespace StudentEnlisterLibrary
         public List<Student> GetStudentList()
         {
             // list of students sorted alphabetically (sorted by last name - ascending)
-            List<Student> sortedList = StudentList.OrderBy(o => o.Surname).ToList();
+            List<Student> sortedList = studentList.OrderBy(o => o.Surname).ToList();
 
             return sortedList;
         }

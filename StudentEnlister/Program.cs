@@ -39,7 +39,6 @@ namespace StudentEnlister
                         if (String.IsNullOrEmpty(name))
                         {
                             Console.WriteLine("You need to insert value.");
-                            continue;
                         }
                         else
                         {
