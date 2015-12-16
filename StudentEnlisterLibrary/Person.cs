@@ -11,6 +11,14 @@ namespace StudentEnlisterLibrary
         //person properties
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int Id { get; set; }
+        private int Id { get; set; }
+
+        public Person()
+        {
+            StudentIdGenerator studentId = StudentIdGenerator.Instance();
+
+            Id = studentId.CreateId();
+        }     
+
     }
 }

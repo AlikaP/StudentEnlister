@@ -22,7 +22,7 @@ namespace StudentEnlisterLibrary
         }
 
         //sortirana lista
-        public List<Student> GetSortedList()
+        public List<Student> GetStudentList()
         {
             // list of students sorted alphabetically (sorted by last name - ascending)
             List<Student> sortedList = StudentList.OrderBy(o => o.Surname).ToList();
